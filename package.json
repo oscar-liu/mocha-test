@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "keywords": [
     "testing",
     "Mocha"
   ],
-  "author": "Ruan Yifeng",
+  "author": "Oscar Liu",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.2.4",
