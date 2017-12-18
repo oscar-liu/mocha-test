@@ -72,6 +72,18 @@ Mocha默认运行test子目录里面的测试脚本。所以，一般都会把�
 
     mocha --recursive
 
+## 通配符号
+
+命令行执行测试脚本时，可以使用通配符，同时指定多个文件。
+
+    mocha {file1,file2}.js  //执行file1和file2两个js文件
+    mocha test/unit/*.js    //执行test/unit下的所有测试脚本文件
+
+除了使用shell通配符，还可以使用node通配符
+
+    mocha 'test/**/*.@(js|jsx)'
+    上面代码指定运行test目录下面任何子目录中、文件后缀名为js或jsx的测试脚本。注意，Node的通配符要放在单引号之中，否则星号（*）会先被Shell解释。
+
 ## mocha 命令行参数
 
     mocha --help
@@ -79,3 +91,8 @@ Mocha默认运行test子目录里面的测试脚本。所以，一般都会把�
 查看命令手册
     
 输出报告格式： http://mochajs.org/#reporters
+
+
+使用mochawesome模块，可以生成漂亮的HTML格式的报告。使用方法见mochawesome官网
+http://adamgruber.github.io/mochawesome/
+
