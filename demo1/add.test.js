@@ -1,6 +1,6 @@
 //add.test.js
 
-var add = require('./add.js');
+var add = require('./add.js');          //引入待测函数
 var expect = require('chai').expect;    //断言库
 /**
  * 断言库有很多种，Mocha并不限制使用哪一种。
@@ -11,7 +11,7 @@ describe('加法函数的测试', function() {
     it('1 加 1 应该等于 2', function() {
       expect(add(1, 1)).to.be.equal(2);
     });
-  });
+});
 
 /**
  * 所谓"断言"，就是判断源码的实际执行结果与预期结果是否一致，如果不一致就抛出一个错误。
